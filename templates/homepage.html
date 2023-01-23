@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: rgb(114, 96, 202);
+}
+h1{
+    background-color: #010901;
+    text-align: center;
+    width: 45%;
+        color: rgb(253, 167, 9); 
+        padding: 15px; 
+        margin: auto; 
+        border: none; 
+}
+
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         }
+         .button{
+ text-decoration:none; 
+ text-align:center; 
+ padding:0px 15px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:21px "Lucida Console", Monaco, monospace; 
+ font-weight:bold; 
+ color:#ffbb00; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+  }
+ form { 
+    text-align: center;
+    border: 3px solid #d42020;
+margin-top: 65px;
+margin-right: 500px;
+margin-left: 500px; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+    .cancelbtn{
+ text-decoration:none; 
+ text-align:center; 
+ padding:0px 15px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:18px "Lucida Console", Monaco, monospace; 
+ font-weight:bold; 
+ color:#b50036; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+  }
+
+ .container { 
+        padding: 25px 15px;
+        background-color: rgb(251, 255, 40);
+    } 
+</style>
+<style>
+    body
+    {
+     background-image:url({{url_for('static',filename='builtin/user.jpg')}})
+    }
+</style>
+<h3 align="margin-right">
+   
+    <font face="cinzel" size="4">
+     <a href="/signin">"SIGN UP</a>&nbsp;&nbsp;&nbsp;
+     <a href="#">APPLY NOW</a>&nbsp;&nbsp;&nbsp;
+     <a href="about">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="contactus">CONTACT US</a>&nbsp;&nbsp;
+
+    </font>
+   </h3> 
+</head>  
+<body>  
+    <center> <h1> Happy Hands Mortage </h1> </center> 
+    <form>
+        <div class="container"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <a href="#" class="button"/>LOGIN&nbsp;➹</a> <br><br>
+            <input type="checkbox" checked="checked"> Remember me 
+            <a href="#" class="cancelbtn"/>CANCEL&nbsp;✖</a>
+            Forgot <a href="#"> password? </a> 
+        </div> 
+    </form>   
+</body>   
+</html>
